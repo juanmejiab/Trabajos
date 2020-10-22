@@ -2,18 +2,15 @@ import java.util.Scanner;
 public class Final{
 	public static int sumatoria(){
 		Scanner sc = new Scanner(System.in);
-		int cantidad = 0, sumatoria = 0;
-		int[] numeros;
-		
-		System.out.print("Ingrese la cantidad de numeros a sumar: ");
-		cantidad = sc.nextInt();
-		numeros = new int[cantidad];
+		int sumatoria = 0;
+		int numero = 0;
 
-		System.out.println("Ingrese los numeros:");
-		for(int i=0; i<numeros.length; i++){
-		numeros[i] = sc.nextInt();
-		sumatoria = sumatoria + numeros[i];
-		}
+		System.out.print("Ingrese un numero: ");
+		numero = sc.nextInt();
+		do{
+			sumatoria = sumatoria + numero;
+			numero--;
+		}while(numero>0);
 		System.out.print("La suma de los numeros es: " + sumatoria);
 		return sumatoria;
 	}
