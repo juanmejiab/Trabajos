@@ -11,7 +11,7 @@ public class Final{
 			sumatoria = sumatoria + numero;
 			numero--;
 		}while(numero>0);
-		System.out.print("La suma de los numeros es: " + sumatoria);
+		System.out.print("El resultado es: " + sumatoria);
 		return sumatoria;
 	}
 	public static double promedio(){
